@@ -10,4 +10,13 @@ class WorldClockTest {
 
         assert(timeLeft).equals(false)
     }
+
+    @Test
+    fun `time left when iteration not zero`() {
+        val worldClock = WorldClock(1, 100)
+
+        val timeLeft = worldClock.isTimeLeft()
+
+        assert(timeLeft).equals(true)
+    }
 }
