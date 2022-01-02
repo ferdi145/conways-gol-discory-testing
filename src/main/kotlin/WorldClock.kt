@@ -1,6 +1,6 @@
-class WorldClock {
+class WorldClock(private val iterations: Int, private val iterationInMillis: Int) {
     fun isTimeLeft(): Boolean {
-        TODO("Not yet implemented")
+        return false
     }
 
 }
